@@ -1,21 +1,27 @@
 /* General Reset */
 body {
+  font-family: Arial, sans-serif;
+  background-color: #F5F5F5;
+  color: #333;
+}
+
+.body {
   margin: 0;
   padding: 0 100px;
   font-family: Arial, sans-serif;
   background-color: #F5F5F5;
   color: #333;
-  
 }
 
 .container {
   margin: 0 auto;
   padding: 20px;
 }
-.navbar{
+
+.navbar {
   margin: auto;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,8 +29,8 @@ body {
 
 /* Header */
 .header {
-  background:transparent;
-  padding: 10px 20px;
+  background: transparent;
+  padding: 10px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,15 +38,16 @@ body {
 
 .sign-in-btn {
   padding: 10px 20px;
-  border: 1px solid #008000;
+  border: 1px solid #006A50;
   background-color: #fff;
-  color: #008000;
+  color: #006A50;
   cursor: pointer;
   border-radius: 5px;
   transition: animation-spown 0.5s ease, color 0.5s ease;
 }
+
 .sign-in-btn:hover {
-  background-color: #008000;
+  background-color: #006A50;
   color: #fff;
 }
 
@@ -51,8 +58,18 @@ body {
   display: grid;
   border-radius: 30px;
   grid-template-columns: repeat(2, 1fr);
-  padding: 40px 20px;
+  padding: 40px 0px;
   margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.details {
+  text-align: left;
 }
 
 .hero h2 {
@@ -62,7 +79,7 @@ body {
 
 .cta-btn {
   padding: 15px 30px;
-  background-color: #008000;
+  background-color: #006A50;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -71,8 +88,8 @@ body {
 
 /* Pillars Section */
 .pillars {
-  padding: 40px 20px;
-  background-color: #fff;
+  margin-bottom: 20px;
+  background: transparent;
   text-align: center;
 }
 
@@ -84,40 +101,86 @@ body {
 }
 
 .card {
-  background-color: #f4f4f4;
+  background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   flex: 1;
   max-width: 250px;
-  text-align: center;
+  text-align: left;
+  border: 1px solid rgba(128, 128, 128, 0.185);
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
 }
 
 /* Vision Section */
 .vision {
-  padding: 40px 20px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
 .vision-cards {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
   margin-top: 20px;
 }
 
-.vision-card {
-  background-color: #f4f4f4;
+.vision-cards img {
+  width: 50px;
+  height: 50px;
+}
+
+.vision-card1 {
+  background-color: #548ff538;
   padding: 20px;
   border-radius: 10px;
-  flex: 1;
-  max-width: 300px;
-  text-align: center;
+  text-align: left;
+}
+
+.vision-card2 {
+  background-color: #C6E4D6;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.vision-card3 {
+  background-color: #F7EBCF;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.vision-card1 button {
+  background-color: #548ff5;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+}
+
+.vision-card2 button {
+  background-color: #09A15C;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+}
+
+.vision-card3 button {
+  background-color: #FFC239;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
 }
 
 /* Opinion Section */
 .opinion {
-  padding: 40px 20px;
-  background-color: #fff;
+  margin: 50px auto;
   text-align: center;
 }
 
@@ -133,25 +196,312 @@ select {
 }
 
 /* News Section */
-.news {
-  padding: 40px 20px;
-  background-color: #e0f4e7;
+.news-section {
+  margin: 50px auto;
 }
 
 .news-card {
-  background-color: #fff;
+  display: flex;
+  background: #fff;
+  border-radius: 25px;
+  padding: 30px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.mb-5 {
+  margin-bottom: 20px;
+}
+
+.news-content {
+  flex: 1;
   padding: 20px;
-  border-radius: 10px;
-  margin-top: 20px;
+  text-align: left;
+}
+.news-content img{
+  width: 120px;
+}
+
+.news-header {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.news-meta {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.news-text {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  padding: 10px 20px;
+  background: #006A50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.read-more:hover {
+  background: #45a049;
+}
+
+
+.section-container {
+
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.section-title {
   text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.table-container {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+.table-container .option {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.table-container th {
+  background: #c8e6c9;
+  color: #333;
+  font-size: 18px;
+}
+
+.table-container td {
+  font-size: 16px;
+  color: #555;
+}
+
+.dropdown {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  background-color: #c8e6c9;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.dropdown:focus {
+  outline: none;
+  border-color: #42a5f5;
+}
+
+/* newsletter section */
+.newsletter-section {
+  margin: 50px auto;
+  text-align: center;
+  background: #C6E4D6;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+}
+
+.newsletter-header {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.newsletter-description {
+  font-size: 16px;
+  color: #555;
+  /* margin-bottom: 20px; */
+  width: 40%;
+  margin: 20px auto;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.subscribe-input {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.subscribe-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background: #006A50;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: animation-spown 0.5s ease, color 0.5s ease;
+}
+
+.subscribe-button:hover {
+  background: #fff;
+  color: #006A50;
+  border: 2px solid #006A50;
+}
+
+.newsletter-note {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* donate section */
+.donate-section {
+  padding: 0 100px;
+  margin: 50px auto;
+  text-align: center;
+  border-radius: 8px;
+  padding: 30px 20px;
+}
+
+.donate-header {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.donate-description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.donation-options {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.donation-card {
+  flex: 1 1 150px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.active {
+  background: #C6E4D6;
+}
+
+.donation-card:hover {
+  background: #006A50;
+  color: #fff;
+  border-color: #006A50;
+}
+
+
+.donate-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px auto 20px;
+  border: none;
+  border-radius: 8px;
+}
+.donate-input::placeholder{
+  text-align: center;
+}
+
+.donate-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background: #006A50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid transparent ;
+  transition: animation-spown 0.5s ease, color 0.5s ease;
+}
+
+.donate-button:hover {
+  background: #fff;
+  border: 1px solid #006A50 ;
+  color: #006A50;
 }
 
 /* Footer */
 .footer {
   background-color: #fff;
+  width: 100%;
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
   border-top: 1px solid #ddd;
+}
+
+.footer hr{
+  width: 70%;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+}
+.fa-facebook{
+  background: #3878a3;
+  padding: 2px 6px;
+  color: #fff ;
+  border-radius: 50%;
+}
+.fa-instagram{
+  color: #c74444 ;
+}
+.footer .icon{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.footer p{
+  font-size: larger;
+  font-weight: 600;
 }
 
 /* animation */
@@ -159,6 +509,7 @@ select {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
