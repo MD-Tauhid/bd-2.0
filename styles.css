@@ -52,6 +52,7 @@ body {
   border-radius: 30px;
   grid-template-columns: repeat(2, 1fr);
   padding: 40px 20px;
+  margin-bottom: 20px;
 }
 
 .hero h2 {
